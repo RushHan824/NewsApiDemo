@@ -1,4 +1,4 @@
-package com.example.news_api_demo
+package com.example.news_api_demos
 
 data class News_Items(
     val status: String,

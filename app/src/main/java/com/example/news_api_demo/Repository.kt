@@ -1,8 +1,10 @@
 package com.example.news_api_demo
 
+import com.example.news_api_demos.News_Items
+
 class Repository(private val api: Top_ApiService){//数据仓库
     //作用是在这里写一下api调用方法的具体实现
-    suspend fun getTopNews(country: String,apiKey: String):News_Items{
+    suspend fun getTopNews(country: String,apiKey: String): News_Items {
         return api.get_topNews(country,apiKey)
     }
 }

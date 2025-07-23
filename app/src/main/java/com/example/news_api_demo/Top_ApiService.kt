@@ -1,5 +1,6 @@
 package com.example.news_api_demo
 
+import com.example.news_api_demos.News_Items
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -8,7 +9,7 @@ interface Top_ApiService {
     suspend fun get_topNews(
         @Query("country") country: String,
         @Query("apiKey") apiKey: String
-    ):News_Items
+    ): News_Items
 }
 //我们访问一个网页需要网址 组成可以是baseurl+路径+参数
 //这里@GET就是一种请求方式 表示从网页里拿数据 括号里"top-headlines"可以表示具体的路径
